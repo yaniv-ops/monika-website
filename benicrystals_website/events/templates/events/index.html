@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    בני קריסטלים
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <header class="header">
+        <section class="logo">
+            <img src="{% static 'img/logo.png'%}" alt="beni crystals" class="logo__img">
+        </section>
+        <section class="user-nav">
+            <div class="user-nav__icons">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__phone">
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-old-phone"></use>
+                    </svg>
+                    <h3 class="logo__header">טלפון: 524204155(972)+<h3>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__whatsapp">
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-whatsapp"></use>
+                    </svg>
+                    <h3 class="logo__header">אפשר גם בווצאפ<h3>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__mail">    
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-mail"></use>
+                    </svg>
+                    <h3 class="logo__header">לשלוח אלינו מייל<h3>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__map"> 
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-map"></use>
+                    </svg>
+                    <h3 class="logo__header">להגיע אלינו<h3>
+                </div>
+            </div>
+            <div class="user-nav__header">
+                <h1 class="heading-secondary">בני קריסטלים</h1>
+            </div>
+        </section>
+
+    </header>
+
+    <section class ="content">
+        <nav class="sidebar">
+            <ul class="side-nav">
+                <li class="side-nav__item side-nav__item--active">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="{% static 'img/sprite.svg'%}#icon-home"></use>
+                        </svg>
+                        <span>בני קריסטלים</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="{% static 'img/sprite.svg'%}#icon-shop"></use>
+                        </svg>
+                        <span>כרגע בחנות</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="{% static 'img/sprite.svg'%}#icon-gift"></use>
+                        </svg>
+                        <span>מתנות לאהובים</span>
+                    </a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="{% static 'img/sprite.svg'%}#icon-location-pin"></use>
+                        </svg>
+                        <span>להגיע אלינו</span>
+                    </a>
+                </li>               
+            </ul>
+            <div class="legal">
+                כל הזכויות שמורות לבלו-נינג'ה 2022 &copy;
+            </div>
+        </nav>
+        <main class="store-view">
+            <div class="gallery">
+                <figure class="gallery__item">
+                    <img src="{% static 'img/logo.png'%}" alt="photo of gem 1" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="{% static 'img/logo.png'%}" alt="photo of gem 2" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="{% static 'img/logo.png'%}" alt="photo of gem 3" class="gallery__photo">
+                </figure>
+            </div>
+
+            <div class="overview">
+                <h1 class="overview__heading">מייבאים לארץ אבני חן</h1>
+                <div class="overview__stars">
+                    <svg class="overview__icon-star">
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-star"></use>
+                    </svg>
+                    <svg class="overview__icon-star">
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-star"></use>
+                    </svg>
+                    <svg class="overview__icon-star">
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-star"></use>
+                    </svg>
+                    <svg class="overview__icon-star">
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-star"></use>
+                    </svg>
+                    <svg class="overview__icon-star">
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-star"></use>
+                    </svg>
+                </div>
+                <div class="overview__location">
+                    <svg class="overview__icon-location">
+                        <use xlink:href="{% static 'img/sprite.svg'%}#icon-location-pin"></use>
+                    </svg>
+                    <button class="btn-inline">תל אביב, ישראל</button>
+                </div>
+                <div class="overview__rating">
+                    <div class="overview__rating-average">9.4</div>
+                    <div class="overview__rating-count">815 הצבעות</div>
+                </div>
+            </div>
+            
+            <div class="detail">
+                <div class="description">
+                    <p class="paragraph">
+                        אנחנו מוכרים אבנים הכי יפות בארץ, אנחנו מוכרים אבנים הכי יפות בארץ,אנחנו מוכרים אבנים הכי יפות בארץ,
+                        אנחנו מוכרים אבנים הכי יפות בארץ,אנחנו מוכרים אבנים הכי יפות בארץ,אנחנו מוכרים אבנים הכי יפות בארץ,
+                        אנחנו מוכרים אבנים הכי יפות בארץ,אנחנו מוכרים אבנים הכי יפות בארץ,אנחנו מוכרים אבנים הכי יפות בארץ,
+                    </p>
+                    <p class="paragraph">
+                        , ספקה מהירה , מכירה בסיטונאותספקה מהירה , מכירה בסיטונאותספקה מהירה , מכירה בסיטונאותספקה מהירה , מכירה בסיטונאות
+                        ספקה מהירה , מכירה בסיטונאותספקה מהירה , מכירה בסיטונאותספקה מהירה , מכירה בסיטונאות
+                        ספקה מהירה , מכירה בסיטונאותספקה מהירה , מכירה בסיטונאותספקה מהירה , מכירה בסיטונאותאספקה מהירה , מכירה בסיטונאות
+                    </p>
+                    <ul class="list">
+                        <li class="list__item">אבנים באיכות גבוהה</li>
+                        <li class="list__item">אבנים באיכות גבוהה</li>
+                        <li class="list__item">אבנים באיכות גבוהה</li>
+                        <li class="list__item">אבנים באיכות גבוהה</li>
+                        <li class="list__item">אבנים באיכות גבוהה</li>
+                        <li class="list__item">אבנים באיכות גבוהה</li>
+                        <li class="list__item">אבנים באיכות גבוהה</li>
+                        <li class="list__item">אבנים באיכות גבוהה</li>
+                    </ul>
+                    <div class="recommend">
+                        <p class="recommend__count">
+                            לקוחות ממליצים
+                        </p>
+                        <div class="recommend__friends">
+                            <img src="{% static 'img/logo.png'%}" alt="friend 1" class="recommend__photo">
+                            <img src="{% static 'img/logo.png'%}" alt="friend 2" class="recommend__photo">
+                            <img src="{% static 'img/logo.png'%}" alt="friend 3" class="recommend__photo">
+                            <img src="{% static 'img/logo.png'%}" alt="friend 4" class="recommend__photo">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="user-reviews">
+                    <figure class="review">
+                        <blockquote class="review__text">
+                            אבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טוב
+                            אבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טוב
+                            אבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טוב אבנים מדהימות ויפות, שירות טוב
+                        <blockquote>
+                        <figcaption class="review__user">
+                            <img src="{% static 'img/logo.png'%}" alt="user 1" class="review__photo">
+                            <div class="review__user-box">
+                                <p class="review__user-name">דויד רוביזון</p>
+                                <p class="review__user-date">אוקטובר 23 , 2022</p>
+                            </div>
+                            <div class="review__rating">
+                                9.2
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="review">
+                        <blockquote class="review__text">
+                            אבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טוב
+                            אבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טוב
+                            אבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טובאבנים מדהימות ויפות, שירות טוב אבנים מדהימות ויפות, שירות טוב
+                        <blockquote>
+                        <figcaption class="review__user">
+                            <img src="{% static 'img/logo.png'%}" alt="user 1" class="review__photo">
+                            <div class="review__user-box">
+                                <p class="review__user-name">יעל תשרי</p>
+                                <p class="review__user-date">אוקטובר 13 , 2022</p>
+                            </div>
+                            <div class="review__rating">
+                                9.6
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <button class="btn-inline">קרא עוד.....<span>&larr;</span></button>
+                </div>
+            </div>
+            <div class="cta">
+                <h2 class="cta__book-now">
+                    מבצעים מדהימים לפונים מהאתר
+                </h2>
+                <button class="btn">
+                    <span class="btn__visible">לחץ למבצעים</span>
+                    <span class="btn__invisible">הזמן היום</span>
+                </button>
+            </div>
+        </main>
+    </section>
+</div>
+  
+{% endblock %}

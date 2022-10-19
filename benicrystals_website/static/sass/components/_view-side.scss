@@ -1,0 +1,194 @@
+//GALLERY
+
+.gallery {
+
+    display: flex;
+
+
+    &__photo {
+
+        width: 100%;
+        display: block;
+
+    }   
+}
+
+
+//STORE VIEW 
+
+.overview {
+    
+    display: flex;
+    background: 1px solid var(--gray-light-2);
+    align-items: center;
+
+
+    &__heading {
+        
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+
+        @include respond (phone) {
+
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
+    }
+
+    &__stars {
+
+       // flex: 1;
+
+       margin-left: auto;
+       display: flex;
+    }
+
+    &__icon-star,
+    &__icon-location {
+
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-gold-dark);
+    }
+
+    &__icon-location {
+        margin-left: .5rem;
+    }
+
+    &__location {
+
+        font-size: 1.2rem;
+        display: flex;
+        vertical-align: center;
+    }
+
+    &__rating {
+
+        background-color: var(--color-gold);
+        margin-right: 3rem;
+        color: #fff;
+        padding: 0 2.25rem;
+        align-self: stretch;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include respond (phone) {
+
+            padding: 0 1.5rem;
+
+        }
+    }
+
+    &__rating-count {
+
+        font-size: .8rem;
+        text-transform: uppercase;
+
+        @include respond (phone) {
+
+            font-size: .8rem;
+        }
+    }
+
+    &__rating-average {
+
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-bottom: -3px;
+
+        @include respond (phone) {
+
+            font-size: 1.8rem;
+        }
+    }
+
+
+}
+
+// PARAGRAPHS
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+// LIST
+
+.list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: var(--line);
+    border-bottom: var(--line);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+    }
+
+    &__item::before {
+
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-left: .7rem;
+
+        // OLDER BROWSERS
+        background-image: url(img/chevron-left.svg);
+        background-size: cover;
+
+        // NEWER BROWSERS - MASKS
+
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        background-color: var(--color-gold);
+        -webkit-mask-image: url(img/chevron-left.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(img/chevron-left.svg);
+        mask-size: cover;
+        background-image: none;    
+        }
+    }
+}
+
+.recommend {
+
+    font-size: 1.3rem;
+    color: var(--gray-dark-3);
+    display: flex;
+    align-items: center;
+    
+    &__count {
+        margin-left: auto;
+    
+    }
+
+    &__friends {
+
+        display: flex;
+    }
+
+    &__photo {
+
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+
+        &:not(:last-child) {
+
+            margin-left: -2rem;
+
+        }
+    }
+}
+

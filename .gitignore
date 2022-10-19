@@ -1,5 +1,3 @@
-node_modules
-package-lock.json
 virt
-benicrystals_website/events/templates/node_modules/
-
+benicrystals_website/events/static/node_modules/
+benicrystals_website/events/static/sass/
